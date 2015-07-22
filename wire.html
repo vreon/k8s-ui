@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Spinner</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="semantic/dist/semantic.min.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <div class="ui container" style="margin-top:40px">
+            <div class="ui grid stackable">
+                <div class="four wide column">
+                    <div class="ui fluid vertical menu">
+                        <a class="item header">
+                            <i class="bar chart icon"></i>
+                            Dashboard
+                        </a>
+                        <div class="item">
+                            <i class="server icon"></i>
+                            <div class="header">Nodes</div>
+                            <div class="menu">
+                                <a class="item">k8s-master</a>
+                                <a class="item">k8s-node-1</a>
+                                <a class="item">k8s-node-2</a>
+                                <a class="item">k8s-node-3</a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <i class="sitemap icon"></i>
+                            <div class="header">Namespaces</div>
+                            <div class="menu">
+                                <a class="item active">default</a>
+                                <a class="item">example</a>
+                                <a class="item">example-2</a>
+                                <a class="item">spamenaces</a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <a class="ui fluid green button">
+                                <i class="plus icon"></i>
+                                Create
+                            </a>
+                        </div>
+                    </div> <!-- nav -->
+                    <div class="ui segment secondary basic">
+                        <div class="ui form fluid">
+                            <div class="inline field">
+                                <div class="ui checkbox">
+                                    <input type="checkbox" checked>
+                                    <label>Show labels</label>
+                                </div>
+                            </div>
+                            <div class="inline field">
+                                <div class="ui checkbox">
+                                    <input type="checkbox" checked>
+                                    <label>Show details</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- four column -->
+                <div class="twelve wide column">
+                    <h2 class="ui header">
+                        <i class="sitemap icon"></i>
+                        <div class="content">
+                            default
+                            <div class="sub header">Namespace</div>
+                        </div>
+                    </h2>
+                    <div class="ui orange segment">
+                        <div class="ui secondary menu">
+                            <div class="fitted item">
+                                <h4 class="ui orange header">
+                                    <i class="rss icon"></i>
+                                    <div class="content">
+                                        www
+                                        <div class="sub header">Service</div>
+                                    </div>
+                                </h4>
+                            </div>
+                            <div class="right menu">
+                                <div class="item">
+                                    <a class="ui orange label">
+                                        http
+                                    </a>
+                                </div>
+                                <div class="item fitted">
+                                    <a class="ui basic button icon">
+                                        <i class="chevron down icon"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui purple segment">
+                        <div class="ui secondary menu">
+                            <div class="fitted item">
+                                <h4 class="ui purple header">
+                                    <i class="repeat icon">
+                                    </i>
+                                    <div class="content">
+                                        my-repl-ctrl
+                                        <div class="sub header">
+                                            Replication Controller
+                                        </div>
+                                    </div>
+                                </h4>
+                            </div>
+                            <a class="purple item active">
+                                Spec
+                            </a>
+                            <a class="purple item">
+                                State
+                            </a>
+                            <div class="right menu">
+                                <div class="item">
+                                    <a class="ui teal label">3 replicas</a>
+                                </div>
+                                <div class="item fitted">
+                                    <a class="ui basic button icon">
+                                        <i class="chevron up icon"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div> <!-- repl menu -->
+                        <div class="ui small purple labels resource-labels">
+                            <a class="ui label">
+                                test: yep
+                            </a>
+                            <a class="ui label">
+                                baz: bat
+                            </a>
+                        </div>
+                        <table class="ui definition table">
+                            <tbody>
+                                <tr>
+                                    <td class="collapsing">Replicas</td>
+                                    <td>3</td>
+                                </tr>
+                                <tr>
+                                    <td class="collapsing">Selector</td>
+                                    <td>
+                                        <a class="ui small teal label">
+                                            app: nginx
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="top aligned collapsing">Template</td>
+                                    <td>
+                                        <h4 class="ui teal header">
+                                            <i class="cubes icon"></i>
+                                            <div class="content">
+                                                my-app
+                                                <div class="sub header">Pod</div>
+                                            </div>
+                                        </h4>
+                                        <div class="ui small labels">
+                                            <a class="ui teal label">
+                                                app: nginx
+                                            </a>
+                                        </div>
+                                        <table class="ui definition very compact table">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="collapsing">Restart policy</td>
+                                                    <td>Always</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="collapsing">DNS policy</td>
+                                                    <td>Default</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <div class="ui menu top attached tabular">
+                                            <a class="item">
+                                                <i class="green disk outline icon"></i>
+                                                <div class="content">
+                                                    <h5 class="ui green header">varwww</h5>
+                                                </div>
+                                            </a>
+                                            <a class="item active">
+                                                <i class="blue cube icon"></i>
+                                                <div class="content">
+                                                    <h5 class="ui blue header">nginx</h5>
+                                                </div>
+                                            </a>
+                                            <a class="item">
+                                                <i class="blue cube icon"></i>
+                                                <div class="content">
+                                                    <h5 class="ui blue header">rebuilder</h5>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="ui segment bottom attached">
+                                            <h4 class="ui blue header">
+                                                <i class="cube icon"></i>
+                                                <div class="content">
+                                                    nginx
+                                                    <div class="sub header">Container</div>
+                                                </div>
+                                            </h4>
+                                            <table class="ui definition very compact table">
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="collapsing">Image</td>
+                                                        <td>docker.io/nginx:1.7.12</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="collapsing">Image pull policy</td>
+                                                        <td>If not present</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="collapsing">Ports</td>
+                                                        <td>
+                                                            <div class="ui tiny orange label">
+                                                                http <div class="detail">TCP 80</div>
+                                                            </div>
+                                                            <div class="ui tiny orange label">
+                                                                ssl <div class="detail">TCP 443</div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div> <!-- repl -->
+                    <div class="ui teal segment">
+                        <h4 class="ui teal header">
+                            <i class="cubes icon"></i>
+                            <div class="content">
+                                my-app-gnfm2
+                                <div class="sub header">
+                                    Pod
+                                </div>
+                            </div>
+                        </h4>
+                        <div class="ui small teal labels resource-labels">
+                            <a class="ui label">
+                                app: nginx
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ui teal segment">
+                        <h4 class="ui teal header">
+                            <i class="cubes icon"></i>
+                            <div class="content">
+                                my-app-8h2nc
+                                <div class="sub header">
+                                    Pod
+                                </div>
+                            </div>
+                        </h4>
+                        <div class="ui small teal labels resource-labels">
+                            <a class="ui label">
+                                app: nginx
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ui teal segment">
+                        <h4 class="ui teal header">
+                            <i class="cubes icon"></i>
+                            <div class="content">
+                                my-app-v92nf
+                                <div class="sub header">
+                                    Pod
+                                </div>
+                            </div>
+                        </h4>
+                        <div class="ui small teal labels resource-labels">
+                            <a class="ui label">
+                                app: nginx
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ui yellow segment">
+                        <h4 class="ui yellow header">
+                            <i class="key icon"></i>
+                            <div class="content">
+                                my-sekrit
+                                <div class="sub header">Secret</div>
+                            </div>
+                        </h4>
+                    </div>
+                </div> <!-- twelve column -->
+            </div> <!-- grid -->
+        </div> <!-- container -->
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script src="semantic/dist/semantic.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,14 @@
+/* Fixes and extra classes for ResourceRow */
+/* Semantic UI apparently doesn't expect <table>s to have multiple <tbody>s */
+
+.ui.table.multibody > tbody:nth-child(2) > tr:first-child > td {
+    border-top: none;
+}
+
+.ui.table.multibody > tbody > tr:first-child > td {
+    border-top: 1px solid rgba(34,36,38,.1);
+}
+
+.ui.table.multibody > tbody > tr.expanded > td {
+    border-top: none;
+}
