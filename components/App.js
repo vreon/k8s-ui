@@ -1,13 +1,19 @@
 import React from 'react';
-import { createStore } from 'redux';
-import { Provider } from 'redux/react';
+import { createStore, combineReducers, applyMiddleware } from 'redux';
+import thunkMiddleware from 'redux-thunk';
+import { Provider } from 'react-redux';
 import { Router, Route } from 'react-router';
 import * as reducers from '../reducers/index';
 
 import KubernetesApp from './KubernetesApp';
 import * as pages from './pages';
 
-const store = createStore(reducers);
+const createStoreWithMiddleware = applyMiddleware(
+    thunkMiddleware
+)(createStore);
+
+const reducer = combineReducers(reducers);
+const store = createStoreWithMiddleware(reducer);
 
 class App {
     render() {

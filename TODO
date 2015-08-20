@@ -1,0 +1,5 @@
+- consider writing a k8s API middleware
+- clean up actions
+    - async ones need request/receive/failure types
+    - FSA seems reasonable
+- check out redux-react-router
